@@ -14,7 +14,6 @@ public class SpawnManager : MonoBehaviour
         int j = 0;
         for (int i = 0; i < spawnCount; i++) {
             int index = Random.Range(0, shapes.Count);
-            Debug.Log(index);
             Instantiate(shapes[index], new Vector3(8, 0, j), shapes[index].transform.rotation);
             Instantiate(shapes[index], new Vector3(-8, 0, j), shapes[index].transform.rotation);
             Instantiate(shapes[index], new Vector3(0, 8, j), shapes[index].transform.rotation);
